@@ -4,6 +4,10 @@
 
 Everything runs in your browser: no server, no account, no API keys.
 
+### ▶ [Try it now — luislop-eng.github.io/prindict](https://luislop-eng.github.io/prindict/)
+
+No install needed: open the link in **Chrome or Edge on desktop** and allow the microphone. Cloning the repo is only for developers who want to change the code.
+
 🇮🇹 [Leggi in italiano](README.it.md)
 
 ---

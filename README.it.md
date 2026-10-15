@@ -4,6 +4,10 @@
 
 Tutto gira nel browser: niente server, niente account, niente chiavi API.
 
+### ▶ [Provala subito — luislop-eng.github.io/prindict](https://luislop-eng.github.io/prindict/)
+
+Non serve installare nulla: apri il link con **Chrome o Edge da computer** e consenti il microfono. Clonare il repo serve solo a chi vuole modificare il codice.
+
 🇬🇧 [Read in English](README.md)
 
 ---
