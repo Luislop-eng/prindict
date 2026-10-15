@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+
+# TypeScript build artifacts
+*.tsbuildinfo
+vite.config.d.ts
+vite.config.js
+
+# OS
+.DS_Store
+
+# Debug artifacts (Cursor)
+.cursor/
+
+# Env / secrets (Prindict needs none, but never commit them)
+.env
+.env.*
+!.env.example
+
+# Local tooling
+.claude/
+.vscode/
+.idea/
+*.log
+coverage/

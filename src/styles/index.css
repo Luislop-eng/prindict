@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Hanken Grotesk", system-ui, -apple-system, sans-serif;
+  background: #f9f9f9;
+  color: #0a0a0a;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* La cornice del palco è un "container": il testo si dimensiona in cqmin,
+   cioè rispetto alla cornice (formato), non rispetto al browser. */
+.stage-frame {
+  container-type: size;
+}
+
+/* Sfondo a puntini editoriale (workspace Creator). */
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(10, 10, 10, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Caret lampeggiante del wordmark — l'idea del "testo che si scrive". */
+.caret {
+  display: inline-block;
+  animation: caret-blink 1.05s step-end infinite;
+}
+@keyframes caret-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Marquee cinetico (la striscia che scorre). */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 22s linear infinite;
+}
+
+::selection {
+  background: #2d5bff;
+  color: #ffffff;
+}

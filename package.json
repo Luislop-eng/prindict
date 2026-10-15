@@ -1,0 +1,53 @@
+{
+  "name": "prindict",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Turn your voice into kinetic typography in real time and record social-ready clips — 100% in the browser, no backend, no API keys.",
+  "license": "MIT",
+  "author": "Luigi Loperfido",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luislop-eng/prindict.git"
+  },
+  "homepage": "https://github.com/Luislop-eng/prindict#readme",
+  "bugs": {
+    "url": "https://github.com/Luislop-eng/prindict/issues"
+  },
+  "keywords": [
+    "speech-to-text",
+    "kinetic-typography",
+    "captions",
+    "web-speech-api",
+    "react",
+    "vite",
+    "canvas",
+    "mediarecorder"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "framer-motion": "^11.11.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^6.1.2",
+    "autoprefixer": "^10.6.1",
+    "postcss": "^8.5.30",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.5"
+  }
+}
