@@ -9,7 +9,7 @@ export interface FontDef {
   stack: string; // CSS font-family
 }
 
-// Font display (heavy) per le caption cinetiche. Caricati da Google Fonts in index.html.
+// Font display (heavy) per le caption cinetiche. Inclusi nella build: vedi src/fonts.ts.
 export const FONTS: FontDef[] = [
   { id: "anybody", label: "Anybody", family: "Anybody", stack: '"Anybody", system-ui, sans-serif' },
   { id: "archivo", label: "Archivo Black", family: "Archivo Black", stack: '"Archivo Black", system-ui, sans-serif' },

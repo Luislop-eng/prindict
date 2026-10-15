@@ -50,7 +50,7 @@ Altri comandi: `npm run build` (build di produzione in `dist/`), `npm test`, `np
 ## Privacy
 
 Prindict non ha backend: impostazioni e immagine di sfondo restano nel `localStorage` del browser, le clip sul tuo computer.
-**Però** il riconoscimento vocale lo fa il browser: in Chrome l'audio del microfono viene inviato ai server Google per la trascrizione. I font dell'interfaccia arrivano da Google Fonts.
+**Però** il riconoscimento vocale lo fa il browser: in Chrome l'audio del microfono viene inviato ai server Google per la trascrizione. I font sono inclusi nell'app (nessuna richiesta a Google Fonts). Nota privacy del sito: [`/privacy.html`](https://luislop-eng.github.io/prindict/privacy.html).
 
 ## Limiti noti
 

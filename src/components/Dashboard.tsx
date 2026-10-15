@@ -96,7 +96,15 @@ export function Dashboard({ onOpenCreator }: Props) {
       <footer className="flex flex-col gap-2 px-6 py-6 md:flex-row md:items-center md:justify-between md:px-16">
         <Logo size="sm" />
         <p className="font-body text-[11px] uppercase tracking-widest text-neutral-400">
-          Presto disponibile come web app e app · Chrome desktop consigliato
+          Open source ·{" "}
+          <a href="https://github.com/Luislop-eng/prindict" className="underline hover:text-ink">
+            GitHub
+          </a>{" "}
+          ·{" "}
+          <a href={`${import.meta.env.BASE_URL}privacy.html`} className="underline hover:text-ink">
+            Privacy
+          </a>{" "}
+          · Chrome desktop consigliato
         </p>
       </footer>
     </div>

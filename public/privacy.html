@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>Privacy — Prindict</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<style>
+  :root { --ink:#0a0a0a; --muted:#525252; --accent:#2d5bff; --paper:#f9f9f9; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; color:var(--ink); background:var(--paper); line-height:1.7; font-size:17px; }
+  main { max-width:720px; margin:0 auto; padding:56px 20px 80px; }
+  a { color:var(--accent); }
+  h1 { font-size:2.2rem; font-weight:900; letter-spacing:-.04em; margin:0 0 6px; }
+  h2 { font-size:1.1rem; font-weight:800; text-transform:uppercase; letter-spacing:.06em; margin:36px 0 8px; }
+  p, li { color:var(--muted); }
+  strong { color:var(--ink); }
+  .back { display:inline-block; margin-bottom:28px; font-weight:700; text-decoration:none; text-transform:uppercase; font-size:.8rem; letter-spacing:.1em; }
+  .note { border:2px solid var(--ink); padding:14px 16px; background:#fff; }
+  .en { margin-top:56px; padding-top:24px; border-top:2px solid var(--ink); }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="./">← Prindict</a>
+  <h1>Privacy</h1>
+  <p>Ultimo aggiornamento: 15 ottobre 2026</p>
+
+  <div class="note">
+    <strong>In breve:</strong> Prindict non ha server né account, non usa cookie, statistiche o tracciamento.
+    Le tue clip restano sul tuo computer. Il riconoscimento vocale però è fornito dal browser:
+    in Chrome l'audio viene trascritto dai server di Google.
+  </div>
+
+  <h2>Chi siamo</h2>
+  <p>Prindict è un progetto open source gratuito, senza scopo commerciale, pubblicato da Luigi Loperfido.
+  Per domande sulla privacy apri una segnalazione privata dal
+  <a href="https://github.com/Luislop-eng/prindict/security/advisories/new">repository GitHub</a>.</p>
+
+  <h2>Cosa resta sul tuo dispositivo</h2>
+  <ul>
+    <li><strong>Impostazioni</strong> (tema, font, colori, grandezza testo) e l'eventuale <strong>immagine di sfondo</strong>
+      sono salvate nel <code>localStorage</code> del tuo browser, solo per ricordare le tue scelte. Puoi cancellarle
+      svuotando i dati del sito.</li>
+    <li><strong>Le registrazioni</strong> vengono create nel browser e restano lì finché non le scarichi. Non vengono caricate da nessuna parte.</li>
+    <li><strong>Font</strong> inclusi nell'app: nessuna richiesta a Google Fonts o ad altri servizi esterni.</li>
+  </ul>
+
+  <h2>Riconoscimento vocale</h2>
+  <p>Per trasformare la voce in testo Prindict usa la Web Speech API del browser. In <strong>Chrome</strong> (ed Edge)
+  questa funzione invia l'audio del microfono ai server del produttore del browser (Google per Chrome) per la
+  trascrizione, secondo la <a href="https://policies.google.com/privacy">privacy di Google</a>. Prindict non riceve
+  né conserva questo audio. Il microfono si attiva solo quando premi Anteprima o Registra, e il browser ti chiede il permesso.
+  Evita di dettare informazioni sensibili.</p>
+
+  <h2>Hosting</h2>
+  <p>Il sito è ospitato da GitHub Pages (GitHub, Inc.). Come ogni server web, GitHub può registrare dati tecnici delle
+  visite (es. indirizzo IP) per sicurezza e funzionamento: vedi la
+  <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">privacy di GitHub</a>.</p>
+
+  <section class="en" lang="en">
+    <h2>English summary</h2>
+    <p>Prindict has no server, accounts, cookies, analytics or tracking. Settings and your background image are stored
+    in your browser's <code>localStorage</code>; recordings never leave your device unless you download them; fonts are
+    self-hosted. Speech recognition is done by your browser: in Chrome, microphone audio is sent to Google for
+    transcription. The site is hosted on GitHub Pages, which may log technical data such as IP addresses.</p>
+  </section>
+</main>
+</body>
+</html>

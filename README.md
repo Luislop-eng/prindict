@@ -66,7 +66,7 @@ Prindict has no backend and stores nothing remotely: your settings and backgroun
 
 **However**, speech recognition is provided by the browser. In Chrome, the Web Speech API sends microphone audio to Google's servers to transcribe it. Keep that in mind before using Prindict for sensitive content.
 
-UI fonts are loaded from Google Fonts.
+Fonts are bundled with the app (no Google Fonts requests). The live site's privacy note is at [`/privacy.html`](https://luislop-eng.github.io/prindict/privacy.html).
 
 ## Known limitations
 
