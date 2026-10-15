@@ -48,7 +48,7 @@ function LangPicker({ lang, onSetLang }: { lang: string; onSetLang: (id: string)
               title={l.label}
               aria-pressed={active}
               className={
-                "border-2 border-ink px-2.5 py-1 font-body text-[11px] font-bold uppercase tracking-[0.1em] transition-colors -ml-0.5 first:ml-0 " +
+                "border-2 border-ink px-2.5 py-1 font-body text-[11px] font-bold uppercase tracking-widest transition-colors -ml-0.5 first:ml-0 " +
                 (active ? "bg-ink text-white" : "bg-white text-ink hover:bg-neutral-100")
               }
             >
@@ -125,7 +125,7 @@ export function Controller({
                 key={opt.id}
                 onClick={() => onSetFormat(opt.id)}
                 className={
-                  "border-2 border-ink px-4 py-2 font-body text-[11px] font-bold uppercase tracking-[0.1em] transition-colors " +
+                  "border-2 border-ink px-4 py-2 font-body text-[11px] font-bold uppercase tracking-widest transition-colors " +
                   (active ? "bg-ink text-white" : "bg-white text-ink hover:bg-neutral-100")
                 }
               >
@@ -154,7 +154,7 @@ export function Controller({
             ) : (
               <StageScreen directive={directive} style={style} format={format} />
             )}
-            <span className="absolute bottom-3 left-1/2 z-10 -translate-x-1/2 bg-ink px-2.5 py-1 font-body text-[10px] font-bold uppercase tracking-[0.14em] text-white">
+            <span className="absolute bottom-3 left-1/2 z-10 -translate-x-1/2 whitespace-nowrap bg-ink px-2.5 py-1 font-body text-[10px] font-bold uppercase tracking-[0.14em] text-white">
               Live preview
             </span>
           </div>
@@ -168,7 +168,7 @@ export function Controller({
             onClick={onToggleTurbo}
             aria-pressed={turbo}
             className={
-              "flex items-center gap-2 border-2 px-4 py-2 font-body text-[11px] font-black uppercase tracking-[0.1em] transition-colors " +
+              "flex items-center gap-2 border-2 px-4 py-2 font-body text-[11px] font-black uppercase tracking-widest transition-colors " +
               (turbo
                 ? "border-accent bg-accent text-white"
                 : "border-ink bg-white text-ink hover:bg-ink hover:text-white")
@@ -178,7 +178,7 @@ export function Controller({
           </button>
           <button
             onClick={() => setCustomizeOpen(true)}
-            className="flex items-center gap-2 border-2 border-ink bg-white px-4 py-2 font-body text-[11px] font-bold uppercase tracking-[0.1em] text-ink transition-colors hover:bg-ink hover:text-white"
+            className="flex items-center gap-2 border-2 border-ink bg-white px-4 py-2 font-body text-[11px] font-bold uppercase tracking-widest text-ink transition-colors hover:bg-ink hover:text-white"
           >
             🎨 Personalizza
           </button>
@@ -198,7 +198,7 @@ export function Controller({
             {listening ? (
               <span className="h-4 w-4 bg-ink" />
             ) : (
-              <span className="ml-0.5 h-0 w-0 border-y-[7px] border-l-[11px] border-y-transparent border-l-ink" />
+              <span className="ml-0.5 h-0 w-0 border-y-[7px] border-l-11 border-y-transparent border-l-ink" />
             )}
           </button>
           <span className="mt-1.5 font-body text-[11px] font-bold uppercase tracking-[0.14em] text-neutral-500">
@@ -210,7 +210,7 @@ export function Controller({
           <button
             onClick={onRecord}
             title="Schermo pulito: registra voce + video, poi riascolta e scarichi o rifai"
-            className="flex items-center gap-2.5 bg-rec px-6 py-3 font-body text-sm font-black uppercase tracking-[0.1em] text-white transition-transform hover:scale-105"
+            className="flex items-center gap-2.5 bg-rec px-6 py-3 font-body text-sm font-black uppercase tracking-widest text-white transition-transform hover:scale-105"
           >
             <span className="h-3 w-3 rounded-full bg-white" />
             Registra clip
@@ -219,7 +219,7 @@ export function Controller({
             onClick={onReview}
             disabled={!scriptAvailable}
             title={scriptAvailable ? "Rivedi lo script e rigenera la clip" : "Parla un po' per generare lo script"}
-            className="flex items-center gap-2 bg-ink px-5 py-3 font-body text-xs font-bold uppercase tracking-[0.1em] text-white transition-colors hover:bg-accent disabled:cursor-not-allowed disabled:opacity-30"
+            className="flex items-center gap-2 bg-ink px-5 py-3 font-body text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-accent disabled:cursor-not-allowed disabled:opacity-30"
           >
             Rivedi &amp; genera
             <span className="bg-pro px-1.5 py-0.5 text-[10px] font-black text-ink">PRO</span>

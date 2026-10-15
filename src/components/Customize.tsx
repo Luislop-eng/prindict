@@ -52,7 +52,7 @@ export function Customize({ style, onChange, onClose }: Props) {
           <h2 className="font-display text-xl font-black uppercase tracking-tight">Personalizza</h2>
           <button
             onClick={onClose}
-            className="border-2 border-ink px-3 py-1 font-body text-xs font-bold uppercase tracking-[0.1em] hover:bg-ink hover:text-white"
+            className="border-2 border-ink px-3 py-1 font-body text-xs font-bold uppercase tracking-widest hover:bg-ink hover:text-white"
           >
             Chiudi
           </button>
@@ -146,7 +146,7 @@ export function Customize({ style, onChange, onClose }: Props) {
                 className={`h-3 w-3 bg-ink transition-transform ${style.numberAccent ? "translate-x-4" : ""}`}
               />
             </span>
-            <span className="font-body text-[11px] font-bold uppercase tracking-[0.1em] text-ink">
+            <span className="font-body text-[11px] font-bold uppercase tracking-widest text-ink">
               Numeri colorati
             </span>
           </button>
@@ -166,13 +166,13 @@ export function Customize({ style, onChange, onClose }: Props) {
               <div className="flex gap-2">
                 <button
                   onClick={() => fileRef.current?.click()}
-                  className="flex-1 border-2 border-ink px-3 py-2 font-body text-xs font-bold uppercase tracking-[0.1em] hover:bg-neutral-100"
+                  className="flex-1 border-2 border-ink px-3 py-2 font-body text-xs font-bold uppercase tracking-widest hover:bg-neutral-100"
                 >
                   Sostituisci
                 </button>
                 <button
                   onClick={() => onChange({ ...style, bgImage: null })}
-                  className="flex-1 border-2 border-ink px-3 py-2 font-body text-xs font-bold uppercase tracking-[0.1em] hover:bg-ink hover:text-white"
+                  className="flex-1 border-2 border-ink px-3 py-2 font-body text-xs font-bold uppercase tracking-widest hover:bg-ink hover:text-white"
                 >
                   Rimuovi
                 </button>
@@ -193,7 +193,7 @@ export function Customize({ style, onChange, onClose }: Props) {
           ) : (
             <button
               onClick={() => fileRef.current?.click()}
-              className="border-2 border-dashed border-ink/40 px-4 py-6 font-body text-xs font-bold uppercase tracking-[0.1em] text-neutral-500 hover:border-ink hover:text-ink"
+              className="border-2 border-dashed border-ink/40 px-4 py-6 font-body text-xs font-bold uppercase tracking-widest text-neutral-500 hover:border-ink hover:text-ink"
             >
               ⬆ Carica una foto su cui parlare
             </button>
@@ -215,7 +215,7 @@ function ColorRow({
 }) {
   return (
     <label className="flex items-center justify-between border-2 border-ink/15 px-3 py-2">
-      <span className="font-body text-xs font-bold uppercase tracking-[0.1em] text-ink">{label}</span>
+      <span className="font-body text-xs font-bold uppercase tracking-widest text-ink">{label}</span>
       <span className="flex items-center gap-2">
         <span className="font-body text-[11px] uppercase tracking-wide text-neutral-400">{value}</span>
         <input

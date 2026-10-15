@@ -166,7 +166,7 @@ export function ReviewRender({ format, style, emojiOn, lang, turbo, initialScrip
               value={script}
               onChange={(e) => setScript(e.target.value)}
               rows={7}
-              className="w-full resize-none border-2 border-white/20 bg-black p-3 font-body text-white outline-none focus:border-accent"
+              className="w-full resize-none border-2 border-white/20 bg-black p-3 font-body text-white outline-hidden focus:border-accent"
               placeholder="Lo script trascritto apparirà qui — correggi i refusi."
             />
             <p className="mt-2 font-body text-xs leading-relaxed text-white/40">
@@ -177,13 +177,13 @@ export function ReviewRender({ format, style, emojiOn, lang, turbo, initialScrip
           <div className="flex gap-3">
             <button
               onClick={genera}
-              className="bg-white px-6 py-3 font-body text-xs font-bold uppercase tracking-[0.1em] text-ink transition-colors hover:bg-accent hover:text-white"
+              className="bg-white px-6 py-3 font-body text-xs font-bold uppercase tracking-widest text-ink transition-colors hover:bg-accent hover:text-white"
             >
               ▶ Genera clip
             </button>
             <button
               onClick={exit}
-              className="border-2 border-white/30 px-6 py-3 font-body text-xs font-bold uppercase tracking-[0.1em] text-white transition-colors hover:bg-white/10"
+              className="border-2 border-white/30 px-6 py-3 font-body text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-white/10"
             >
               Annulla
             </button>
@@ -203,19 +203,19 @@ export function ReviewRender({ format, style, emojiOn, lang, turbo, initialScrip
           <div className="flex flex-wrap justify-center gap-3">
             <button
               onClick={rec.download}
-              className="bg-white px-6 py-3 font-body text-xs font-bold uppercase tracking-[0.1em] text-ink transition-colors hover:bg-accent hover:text-white"
+              className="bg-white px-6 py-3 font-body text-xs font-bold uppercase tracking-widest text-ink transition-colors hover:bg-accent hover:text-white"
             >
               ⬇ Salva clip
             </button>
             <button
               onClick={redo}
-              className="border-2 border-white/30 px-6 py-3 font-body text-xs font-bold uppercase tracking-[0.1em] text-white transition-colors hover:bg-white/10"
+              className="border-2 border-white/30 px-6 py-3 font-body text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-white/10"
             >
               ↺ Rivedi ancora
             </button>
             <button
               onClick={exit}
-              className="border-2 border-white/30 px-6 py-3 font-body text-xs font-bold uppercase tracking-[0.1em] text-white transition-colors hover:bg-white/10"
+              className="border-2 border-white/30 px-6 py-3 font-body text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-white/10"
             >
               Esci
             </button>
@@ -226,7 +226,7 @@ export function ReviewRender({ format, style, emojiOn, lang, turbo, initialScrip
       {generating && rec.state === "recording" && (
         <button
           onClick={redo}
-          className="absolute right-5 top-5 border-2 border-white/30 px-3 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.1em] text-white/70 transition-colors hover:bg-white/10"
+          className="absolute right-5 top-5 border-2 border-white/30 px-3 py-1.5 font-body text-[11px] font-bold uppercase tracking-widest text-white/70 transition-colors hover:bg-white/10"
         >
           ✕ Annulla
         </button>

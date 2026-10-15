@@ -167,7 +167,7 @@ export default function App() {
         {rec.state !== "preview" && (
           <button
             onClick={exitStage}
-            className="absolute right-5 top-5 border-2 border-white/30 px-3 py-1.5 font-body text-[11px] font-bold uppercase tracking-[0.1em] text-white/70 transition-colors hover:bg-white/10"
+            className="absolute right-5 top-5 border-2 border-white/30 px-3 py-1.5 font-body text-[11px] font-bold uppercase tracking-widest text-white/70 transition-colors hover:bg-white/10"
           >
             ✕ Esci
           </button>
@@ -214,14 +214,14 @@ export default function App() {
             <div className="flex flex-wrap justify-center gap-3">
               <button
                 onClick={rec.download}
-                className="bg-white px-6 py-3 font-body text-xs font-bold uppercase tracking-[0.1em] text-ink transition-colors hover:bg-accent hover:text-white"
+                className="bg-white px-6 py-3 font-body text-xs font-bold uppercase tracking-widest text-ink transition-colors hover:bg-accent hover:text-white"
               >
                 ⬇ Scarica clip
               </button>
               {scriptText && (
                 <button
                   onClick={() => enterReview(scriptText)}
-                  className="flex items-center gap-2 bg-ink px-6 py-3 font-body text-xs font-bold uppercase tracking-[0.1em] text-white transition-colors hover:bg-accent"
+                  className="flex items-center gap-2 bg-ink px-6 py-3 font-body text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-accent"
                 >
                   Rivedi script
                   <span className="bg-pro px-1.5 py-0.5 text-[10px] font-black text-ink">PRO</span>
@@ -229,13 +229,13 @@ export default function App() {
               )}
               <button
                 onClick={retake}
-                className="border-2 border-white/30 px-6 py-3 font-body text-xs font-bold uppercase tracking-[0.1em] text-white transition-colors hover:bg-white/10"
+                className="border-2 border-white/30 px-6 py-3 font-body text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-white/10"
               >
                 ↺ Rifai
               </button>
               <button
                 onClick={exitStage}
-                className="border-2 border-white/30 px-6 py-3 font-body text-xs font-bold uppercase tracking-[0.1em] text-white transition-colors hover:bg-white/10"
+                className="border-2 border-white/30 px-6 py-3 font-body text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-white/10"
               >
                 ✕ Esci
               </button>

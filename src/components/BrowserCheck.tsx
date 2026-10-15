@@ -20,7 +20,7 @@ export function BrowserCheck({ onBack }: Props) {
       {onBack && (
         <button
           onClick={onBack}
-          className="border-2 border-ink px-5 py-2.5 font-body text-xs font-bold uppercase tracking-[0.1em] text-ink transition-colors hover:bg-ink hover:text-white"
+          className="border-2 border-ink px-5 py-2.5 font-body text-xs font-bold uppercase tracking-widest text-ink transition-colors hover:bg-ink hover:text-white"
         >
           ← Torna alla dashboard
         </button>

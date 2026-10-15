@@ -21,7 +21,7 @@ export function Dashboard({ onOpenCreator }: Props) {
         </div>
         <button
           onClick={onOpenCreator}
-          className="bg-ink px-5 py-2.5 font-body text-xs font-bold uppercase tracking-[0.1em] text-white transition-colors hover:bg-accent"
+          className="bg-ink px-5 py-2.5 font-body text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-accent"
         >
           Inizia
         </button>
@@ -51,7 +51,7 @@ export function Dashboard({ onOpenCreator }: Props) {
               Trasforma la voce in clip tipografiche per i social. Karaoke, numeri formattati, emoji,
               registrazione e re-render dallo script corretto.
             </p>
-            <span className="mt-6 inline-flex items-center gap-2 font-body text-sm font-bold uppercase tracking-[0.1em]">
+            <span className="mt-6 inline-flex items-center gap-2 font-body text-sm font-bold uppercase tracking-widest">
               Apri
               <span className="text-accent transition-transform group-hover:translate-x-1">→</span>
             </span>
@@ -73,7 +73,7 @@ export function Dashboard({ onOpenCreator }: Props) {
               Uno schermo che reagisce a chi parla, per palco e proiettore. Multi-device, in tempo
               reale. Arriverà più avanti.
             </p>
-            <span className="mt-6 inline-flex items-center gap-2 font-body text-sm font-bold uppercase tracking-[0.1em] text-neutral-400">
+            <span className="mt-6 inline-flex items-center gap-2 font-body text-sm font-bold uppercase tracking-widest text-neutral-400">
               Presto 🔒
             </span>
           </div>
@@ -95,7 +95,7 @@ export function Dashboard({ onOpenCreator }: Props) {
       {/* Footer */}
       <footer className="flex flex-col gap-2 px-6 py-6 md:flex-row md:items-center md:justify-between md:px-16">
         <Logo size="sm" />
-        <p className="font-body text-[11px] uppercase tracking-[0.1em] text-neutral-400">
+        <p className="font-body text-[11px] uppercase tracking-widest text-neutral-400">
           Presto disponibile come web app e app · Chrome desktop consigliato
         </p>
       </footer>
