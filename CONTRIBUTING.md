@@ -1,6 +1,6 @@
 # Contributing to Prindict
 
-Thanks for helping! Prindict is a small, dependency-light, browser-only app — please keep it that way (no backend, no required API keys).
+Thanks for helping! Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md). Prindict is a small, dependency-light, browser-only app — please keep it that way (no backend, no required API keys).
 
 ## Setup
 
